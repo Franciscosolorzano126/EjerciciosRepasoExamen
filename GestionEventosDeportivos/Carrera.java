@@ -3,7 +3,7 @@ package GestionEventosDeportivos;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Carrera extends EventoDeportivo{
+public class Carrera extends EventoDeportivo {
     private double distancia; // kilometros
 
     public Carrera(String nombre, LocalDate fecha, String lugar, double distancia) {
@@ -20,15 +20,15 @@ public class Carrera extends EventoDeportivo{
     }
 
     @Override
-    public Participante obtenerGanador(){
-        if(getParticipantes().isEmpty()){
+    public Participante obtenerGanador() {
+        if (getParticipantes().isEmpty()) {
             return null;
         }
 
         Participante ganador = getParticipantes().get(0);
 
         for (Participante p : getParticipantes()) {
-            if(p.getTiempo() < ganador.getTiempo()){
+            if (p.getTiempo() < ganador.getTiempo()) {
                 ganador = p;
             }
         }
