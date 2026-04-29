@@ -23,6 +23,4 @@ public class Autor extends Persona{
     public String toString() {
         return "Autor [generoLiterario=" + generoLiterario + "]";
     }
-   
-    
 }
