@@ -15,8 +15,8 @@ public class AppGestionEmpleados {
         }
 
         try {
-            empresa.eliminarEmpleado("001");
             empresa.eliminarEmpleado("003");
+            empresa.eliminarEmpleado("001");
         } catch (EmpleadoNoEncontradoException e) {
             System.out.println(e.getMessage());
         }

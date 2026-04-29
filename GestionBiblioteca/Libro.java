@@ -63,6 +63,4 @@ public class Libro {
         return "Libro [titulo=" + titulo + ", autor=" + autor + ", fechaPublicacion=" + fechaPublicacion + ", isbn="
                 + isbn + ", precio=" + precio + "]";
     }
-
-    
 }

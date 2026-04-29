@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Biblioteca {
     private ArrayList<Libro> libros;
 
+    public Biblioteca(){
+        this.libros = new ArrayList<>();
+    }
+
     public void agregarLibro(Libro libro){
         libros.add(libro);
     }
@@ -13,6 +17,7 @@ public class Biblioteca {
         for (Libro libro : libros) {
             if(libro.getIsbn().equals(isbn)){
                 libros.remove(libro);
+                return;
             }
         }
     }
@@ -23,6 +28,11 @@ public class Biblioteca {
 
     public void setLibros(ArrayList<Libro> libros) {
         this.libros = libros;
+    }
+
+    @Override
+    public String toString() {
+        return "Biblioteca [libros=" + libros + "]";
     }
 
     

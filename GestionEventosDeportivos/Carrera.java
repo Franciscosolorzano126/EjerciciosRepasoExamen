@@ -1,7 +1,6 @@
 package GestionEventosDeportivos;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Carrera extends EventoDeportivo {
     private double distancia; // kilometros
