@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Empresa {
     private ArrayList<Empleado> empleados;
 
+    public Empresa(){
+        this.empleados = new ArrayList<>();
+    }
+
     public void agregarEmpleado(Empleado e){
         empleados.add(e);
         System.out.println("Empleado agregado correctamente.");
